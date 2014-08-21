@@ -1,14 +1,18 @@
 <?php
 namespace VCR\Util;
 
-use Assert\Assertion as BaseAssertion;
 use VCR\VCRException;
 
-class Assertion extends BaseAssertion
+class Assertion
 {
     protected static $exceptionClass = 'VCR\VCRException';
 
     const INVALID_CALLABLE = 910;
+
+    public function __call($name, $arguments)
+    {
+        // todo: log?
+    }
 
     /**
      * Assert that the value is callable.
