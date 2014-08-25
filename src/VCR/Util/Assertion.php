@@ -14,6 +14,12 @@ class Assertion
         // todo: log?
     }
 
+    public static function __callStatic($name, $arguments)
+    {
+        // todo: log?
+        return true;
+    }
+
     /**
      * Assert that the value is callable.
      *
