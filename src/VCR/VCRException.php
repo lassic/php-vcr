@@ -2,7 +2,8 @@
 
 namespace VCR;
 
-use Assert\InvalidArgumentException;
+//use Assert\InvalidArgumentException;
+use Guzzle\Common\Exception\InvalidArgumentException;
 
 class VCRException extends InvalidArgumentException
 {
